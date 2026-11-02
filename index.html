@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Faith Cards — Collect all 500</title><meta name="theme-color" content="#2a1b3d">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top">
+ <div class="brand"><span class="logo">✝</span><div><h1>Faith Cards</h1><small>Collect all 500 · one blessing pack a day</small></div></div>
+ <div class="collect"><b id="ownedN">0</b><span>/500</span><div class="bar"><i id="ownedBar"></i></div></div>
+</header>
+<section class="streak" id="streak">
+ <div class="flame" id="flameBig">🔥<b id="streakN">0</b></div>
+ <div class="streak-info"><div class="pips" id="pips"></div><p id="streakMsg"></p></div>
+</section>
+<nav class="tabs"><button class="tab on" data-v="open">🎁 Open</button><button class="tab" data-v="binder" id="binderTab">📘 Binder <em id="newDot" hidden></em></button></nav>
+<main>
+ <section id="vOpen" class="view on">
+  <div id="stage" class="stage"></div>
+  <p id="stageMsg" class="stage-msg"></p>
+  <div id="pulled" class="pulled"></div>
+  <div class="actions"><button id="toBinder" class="btn gold" hidden>Add to Binder ✨</button></div>
+ </section>
+ <section id="vBinder" class="view">
+  <div id="seriesChips" class="chips"></div>
+  <div class="binder-head"><h2 id="seriesTitle"></h2><span id="seriesCount"></span></div>
+  <div id="binderGrid" class="binder"></div>
+  <div class="pager"><button class="btn" id="prevPg">‹ Prev</button><span id="pgInfo"></span><button class="btn" id="nextPg">Next ›</button></div>
+ </section>
+</main>
+<div id="zoom" class="zoom" hidden></div>
+<div id="flash" class="flash"></div>
+<div id="complete" class="modal" hidden><div class="modal-in"><div class="crown">👑</div><h2>Collection Complete!</h2><p>All 500 Faith Cards gathered. The Golden Binder is yours!</p><blockquote>“I have fought the good fight, I have finished the race, I have kept the faith.”<cite>2 Timothy 4:7</cite></blockquote><button class="btn gold" onclick="this.closest('.modal').hidden=true">Hallelujah! 🎉</button></div></div>
+<div id="debug" class="debug" hidden></div>
+<footer>Packs reset at local midnight · progress saved on this device</footer>
+<script src="data.js"></script><script src="art.js"></script><script src="app.js"></script></body></html>
