@@ -5,9 +5,12 @@
     python play.py <command ...>                  run one command (see: python play.py help)
     python play.py                                interactive session
     python play.py saves                          list saved careers
+    python play.py export career.json             write one file the app can load
+    python play.py import career.json             bring a save downloaded from the app back
 
 The career is saved to saves/<name>/ after every command.
 """
+import json
 import sys
 
 from aflm import storage, generator
@@ -43,11 +46,26 @@ def main(argv: list[str]) -> int:
         print(cmd_clubs(game, []))
         return 0
 
+    if argv and argv[0] == "import" and len(argv) > 1:
+        # a save file downloaded from the app -> a career folder the CLI can play
+        with open(argv[1], encoding="utf-8") as f:
+            game = storage.from_bundle(json.load(f))
+        d = storage.save_game(game, save or game.meta.get("save_name", "career"))
+        print(f"Imported {argv[1]} as '{d.name}'.")
+        return 0
+
     try:
         game = storage.load_game(save)
     except FileNotFoundError as e:
         print(e)
         return 1
+
+    if argv and argv[0] == "export" and len(argv) > 1:
+        # one file the app can open with "Load a save file"
+        with open(argv[1], "w", encoding="utf-8") as f:
+            json.dump(storage.to_bundle(game), f, separators=(",", ":"))
+        print(f"Wrote {argv[1]} - open it in the app with 'Load a save file'.")
+        return 0
 
     if argv:                                   # one-shot command
         print(execute(game, " ".join(argv)))

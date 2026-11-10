@@ -48,6 +48,19 @@ CLUBS = [
     ("WBD", "Western Bulldogs",  "Bulldogs", "Marvel Stadium",       "VIC", "red, white and blue",         58),
 ]
 
+# Club colours for badges and theming: (main, second, accent that reads on a dark page)
+CLUB_COLOURS = {
+    "ADE": ("#0b2a5b", "#e21937", "#ffd200"), "BRI": ("#7c003e", "#0054a4", "#fdbe57"),
+    "CAR": ("#0e1e2d", "#ffffff", "#8fb4d9"), "COL": ("#111111", "#ffffff", "#e8e8e8"),
+    "ESS": ("#111111", "#cc2031", "#ff4d5e"), "FRE": ("#2a0d54", "#ffffff", "#b79cf0"),
+    "GEE": ("#12305a", "#ffffff", "#8db8ee"), "GCS": ("#d93e39", "#f6bd00", "#f6bd00"),
+    "GWS": ("#414042", "#f47920", "#f47920"), "HAW": ("#4d2004", "#fbbf15", "#fbbf15"),
+    "MEL": ("#0f1131", "#cc2031", "#ff5468"), "NTH": ("#013b9f", "#ffffff", "#7fb0ff"),
+    "PTA": ("#111111", "#008aab", "#29c2e0"), "RIC": ("#111111", "#ffd200", "#ffd200"),
+    "STK": ("#111111", "#ed0f05", "#ff5a4f"), "SYD": ("#ed171f", "#ffffff", "#ff6b70"),
+    "WCE": ("#002b79", "#f2a900", "#f2a900"), "WBD": ("#014896", "#e21937", "#7fb0ff"),
+}
+
 # Traditional rivalries: these nine pairs always meet twice a season.
 RIVALRIES = [
     ("ADE", "PTA"),   # Showdown

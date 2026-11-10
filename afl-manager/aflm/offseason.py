@@ -403,7 +403,9 @@ def _draft_select(game: Game, slot: dict, p: Player) -> None:
     cid = slot["owner"]
     senior, _ = list_counts(game, cid)
     rookie = senior >= C.SENIOR_MAX
-    wage = max(C.MIN_WAGE, int(round(market_wage(overall(p), p.age, p.potential, game.meta["wage_scale"]) * 0.8 / 5) * 5))
+    # draftees are on the standard scale: modest money, a little more for early picks
+    base = {1: 190, 2: 160}.get(slot["round"], 140)
+    wage = max(C.MIN_WAGE, int(round(base * game.cap / C.SALARY_CAP / 5) * 5))
     sign_player(game, p, cid, wage, 2, rookie)
     p.drafted = f"{game.year} pick {slot['n']} ({cid})"
     game.draft["live"]["log"].append([slot["n"], cid, p.id, p.name, p.pos, p.age])
@@ -509,7 +511,12 @@ def job_offers(game: Game) -> list[str]:
 
 
 def open_contracts(game: Game) -> None:
+    """Start the off-season.  Next season's salary cap applies from here on, so
+    every deal, trade and draft pick is measured against the cap it will count under."""
     game.meta["phase"] = "contracts"
+    game.meta["cap"] = int(round(game.cap * C.CAP_GROWTH / 10.0) * 10)
+    game.meta["wage_scale"] = round(game.meta["wage_scale"] * C.CAP_GROWTH, 3)
+    game.add_news(f"The salary cap for {game.year + 1} is set at ${game.cap}k.", "league")
 
 
 def close_contracts(game: Game, rng) -> list[str]:
@@ -569,14 +576,20 @@ def finish_draft_and_roll_over(game: Game, rng) -> dict:
                               f"leading players' contracts.", "list")
     draft_log = game.draft["live"]["log"]
     old_year = game.year
-    new_cap = int(round(game.cap * C.CAP_GROWTH / 10.0) * 10)
-    for cid in game.clubs:                          # AI clubs restructure deals to stay legal
+    new_cap = game.cap                              # already next season's (set when contracts opened)
+    # Draftees and top-up signings can nudge a club over the cap.  Clubs fix that the
+    # way real ones do: by restructuring senior deals.  (The user is stopped earlier
+    # if he is over by more than this can cover - see commands.advance_step.)
+    for cid in game.clubs:
         pay = game.payroll(cid)
-        if cid != user and pay > new_cap:
-            k = new_cap * 0.995 / pay
+        if pay > new_cap:
+            k = new_cap * 0.998 / pay
             for p in game.squad(cid):
                 if not p.rookie:
                     p.wage = max(C.MIN_WAGE, int(p.wage * k / 5.0) * 5)
+            if cid == user:
+                game.add_news(f"Contracts were restructured to fit your draftees under the cap "
+                              f"(${pay - game.payroll(cid)}k trimmed from senior deals).", "list")
     for pid in list(game.draft["pool"]):            # the undrafted go back to state leagues
         development.remove_player(game, game.players[pid])
     keep = sorted((game.players[pid] for pid in game.free_agents),
@@ -587,8 +600,6 @@ def finish_draft_and_roll_over(game: Game, rng) -> dict:
 
     notes = development.new_year_progression(game, rng)
     game.meta["year"] = old_year + 1
-    game.meta["cap"] = new_cap
-    game.meta["wage_scale"] = round(game.meta["wage_scale"] * C.CAP_GROWTH, 3)
     game.draft["picks"] = [p for p in game.draft["picks"] if p["year"] > old_year]
     add_draft_picks(game, game.year + 1)
     lad = game.season["final_ladder"]

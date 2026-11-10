@@ -527,7 +527,8 @@ def match_report(game: Game, m: dict, both: bool = False) -> str:
                 if st["side"] != side:
                     continue
                 p = game.players.get(int(pid))
-                rows.append({"Slot": st["slot"], "Player": p.short if p else f"#{pid}", "K": st["k"],
+                rows.append({"Slot": st["slot"],
+                             "Player": p.short if p else d.get("names", {}).get(pid, f"#{pid}"), "K": st["k"],
                              "H": st["hb"], "D": st["k"] + st["hb"], "M": st["m"], "T": st["t"],
                              "G": st["g"], "B": st["b"], "HO": st["ho"], "CL": st["cl"], "I50": st["i50"],
                              "Rtg": st["rt"]})
@@ -850,59 +851,78 @@ def round_report(game: Game, rep: dict, brief: bool = False) -> str:
     return "\n".join(out)
 
 
-def advance(game: Game, rng=None, confirm: bool = False, brief: bool = False) -> str:
-    """Move the game on by one step, whatever phase it is in."""
+def advance_step(game: Game, rng=None, confirm: bool = False) -> dict:
+    """Move the game on by one step, whatever phase it is in, and report what
+    happened as data.  Both front ends build on this."""
     rng = rng or random
     club = _need_user(game)
     if game.meta.get("sacked"):
         raise CmdError(_phase_hint(game).strip())
     ph = game.phase
     if ph == "season":
-        return round_report(game, season.play_round(game, rng), brief)
+        return {"kind": "round", "rep": season.play_round(game, rng)}
     if ph == "finals":
         rep = season.play_finals_week(game, rng)
-        out = round_report(game, rep, brief)
         if game.phase == "review":
             game.meta["review"] = offseason.season_review(game, rng)
-            out += "\n" + review_text(game) + "\n" + _phase_hint(game)
-        else:
-            nxt = game.season["finals"][-1]
-            out += f"\n\nNext: {nxt['name']}\n" + "\n".join(f"  {m['rnd']}: {views.result_text(game, m)}" for m in nxt["matches"])
-        return out
+        return {"kind": "finals", "rep": rep, "season_over": game.phase == "review"}
     if ph == "review":
         offseason.open_contracts(game)
-        return "Contract talks are open.\n" + cmd_contracts(game, [])
+        return {"kind": "contracts_open"}
     if ph == "contracts":
         ooc = offseason.out_of_contract(game, club.id)
         if ooc and not confirm:
-            return ("These players are still unsigned and WILL LEAVE if you advance:\n  "
-                    + ", ".join(f"{p.name} ({p.pos} {ovr(p)}, {p.age})" for p in ooc)
-                    + "\nRe-sign with 'offer <player> <years>' / 'offer all', or run 'advance confirm' to let them go.")
-        lost = offseason.close_contracts(game, rng)
-        return ((f"Gone: {', '.join(lost)}.\n" if lost else "")
-                + "The trade period is open.\n" + cmd_picks(game, []) + "\n" + _phase_hint(game))
+            return {"kind": "unsigned", "players": ooc}
+        return {"kind": "trades_open", "lost": offseason.close_contracts(game, rng)}
     if ph == "trades":
         offseason.close_trades(game, rng)
+        return {"kind": "draft_open"}
+    if ph == "draft":
+        if game.payroll(club.id) > game.cap * 1.04:      # a little over can be restructured away
+            raise CmdError(f"You are well over next season's cap ({money(game.payroll(club.id))} v {money(game.cap)}). "
+                           f"Delist or trade before the season can start.")
+        return {"kind": "new_season", "rep": offseason.finish_draft_and_roll_over(game, rng)}
+    raise CmdError(f"Unknown phase {ph}")
+
+
+def advance(game: Game, rng=None, confirm: bool = False, brief: bool = False) -> str:
+    """Text version of advance_step."""
+    step = advance_step(game, rng, confirm)
+    kind, club = step["kind"], game.user
+    if kind == "round":
+        return round_report(game, step["rep"], brief)
+    if kind == "finals":
+        out = round_report(game, step["rep"], brief)
+        if step["season_over"]:
+            return out + "\n" + review_text(game) + "\n" + _phase_hint(game)
+        nxt = game.season["finals"][-1]
+        return out + f"\n\nNext: {nxt['name']}\n" + "\n".join(
+            f"  {m['rnd']}: {views.result_text(game, m)}" for m in nxt["matches"])
+    if kind == "contracts_open":
+        return "Contract talks are open.\n" + cmd_contracts(game, [])
+    if kind == "unsigned":
+        return ("These players are still unsigned and WILL LEAVE if you advance:\n  "
+                + ", ".join(f"{p.name} ({p.pos} {ovr(p)}, {p.age})" for p in step["players"])
+                + "\nRe-sign with 'offer <player> <years>' / 'offer all', or run 'advance confirm' to let them go.")
+    if kind == "trades_open":
+        lost = step["lost"]
+        return ((f"Gone: {', '.join(lost)}.\n" if lost else "")
+                + "The trade period is open.\n" + cmd_picks(game, []) + "\n" + _phase_hint(game))
+    if kind == "draft_open":
         trades = [n["text"] for n in game.news[-40:] if n["tag"] == "trade" and n["year"] == game.year]
         return ("Trade period closed.\n" + "\n".join("  " + t for t in trades[-10:]) + "\n" + draft_screen(game))
-    if ph == "draft":
-        new_cap = int(round(game.cap * C.CAP_GROWTH / 10.0) * 10)
-        if game.payroll(club.id) > new_cap:
-            raise CmdError(f"You are over next season's cap ({money(game.payroll(club.id))} v {money(new_cap)}). "
-                           f"Delist or trade before the season can start.")
-        rep = offseason.finish_draft_and_roll_over(game, rng)
-        out = [heading(f"Welcome to {rep['year']}")]
-        mine = [x for x in rep["draft_log"] if x[1] == club.id]
-        if mine:
-            out.append("Your draftees: " + ", ".join(f"#{n} {name} ({pos})" for n, _, _, name, pos, _ in mine))
-        if rep["filled"]:
-            out.append("Signed to fill the list: " + ", ".join(rep["filled"]))
-        if rep["notes"]:
-            out.append("Pre-season whispers:")
-            out += ["  " + n for n in rep["notes"]]
-        out.append(cmd_status(game, []))
-        return "\n".join(out)
-    raise CmdError(f"Unknown phase {ph}")
+    rep = step["rep"]
+    out = [heading(f"Welcome to {rep['year']}")]
+    mine = [x for x in rep["draft_log"] if x[1] == club.id]
+    if mine:
+        out.append("Your draftees: " + ", ".join(f"#{n} {name} ({pos})" for n, _, _, name, pos, _ in mine))
+    if rep["filled"]:
+        out.append("Signed to fill the list: " + ", ".join(rep["filled"]))
+    if rep["notes"]:
+        out.append("Pre-season whispers:")
+        out += ["  " + n for n in rep["notes"]]
+    out.append(cmd_status(game, []))
+    return "\n".join(out)
 
 
 def cmd_sim(game: Game, args, rng=None) -> str:

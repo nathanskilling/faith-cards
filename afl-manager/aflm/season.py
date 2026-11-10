@@ -222,7 +222,10 @@ def play_match(game: Game, m: dict, rng, keep_detail: bool) -> dict:
     m["att"] = finance.match_day(game, m, rng)
     if keep_detail:
         m["detail"] = {"players": {str(pid): st for pid, st in res["players"].items()},
-                       "comm": res["comm"], "tactics": res["tactics"]}
+                       "comm": res["comm"], "tactics": res["tactics"],
+                       "feed": res["feed"], "timeline": res["timeline"],
+                       # names are kept so the report still reads after a player retires
+                       "names": {str(pid): game.players[pid].short for pid in res["players"]}}
     finance.board_after_match(game, m)
     for i in injuries:
         if i["weeks"] >= 4 or i["club"] == game.meta.get("user_club"):

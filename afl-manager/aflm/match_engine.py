@@ -247,6 +247,7 @@ def simulate_match(game: Game, home_id: str, away_id: str, venue: str, *,
     REF = BASE_REF + 0.7 * (sum(levels) / len(levels) - REF_RATING)
     sides = (Side(game, home_id, hm, rng, wet, REF), Side(game, away_id, am, rng, wet, REF))
     score = [[0, 0], [0, 0]]                      # [goals, behinds] per side
+    timeline = []                                 # every score: [quarter, minute, side, G|B|R, player id]
     tstat = [{"i50": 0, "cl": 0, "ho": 0}, {"i50": 0, "cl": 0, "ho": 0}]
     events, quarters = [], []
 
@@ -284,11 +285,13 @@ def simulate_match(game: Game, home_id: str, away_id: str, venue: str, *,
             lead_before = pts(i) - pts(1 - i)
             shooter.st["g"] += 1
             score[i][0] += 1
+            timeline.append([q, minute, i, "G", shooter.p.id])
             events.append((q, minute, "goal", i, shooter, kind, lead_before))
             return "goal"
         if r < p_goal + (1 - p_goal) * (0.70 if kind == "set" else 0.62):
             shooter.st["b"] += 1
             score[i][1] += 1
+            timeline.append([q, minute, i, "B", shooter.p.id])
             return "behind"
         return "miss"
 
@@ -385,6 +388,7 @@ def simulate_match(game: Game, home_id: str, away_id: str, venue: str, *,
             r = rng.random()
             if r < 0.08:                                     # rushed through
                 score[i][1] += 1
+                timeline.append([q, minute, i, "R", 0])
                 return "open", 1 - i, 0.12
             if r < 0.55:
                 return "open", 1 - i, reb * 0.55
@@ -468,12 +472,13 @@ def simulate_match(game: Game, home_id: str, away_id: str, venue: str, *,
             ranked.append((rating + impact / 85.0 + eye + (0.3 if won else 0), d.p.id))
     ranked.sort(reverse=True)
 
+    comm, feed = _commentary(sides, events, quarters, extra_time, wet)
     return {
         "home": home_id, "away": away_id, "venue": venue, "wet": wet, "final": is_final,
         "hs": [score[0][0], score[0][1], pts(0)], "as": [score[1][0], score[1][1], pts(1)],
         "qs": quarters, "et": extra_time,
         "team": tstat, "players": players, "votes": [pid for _, pid in ranked[:3]],
-        "comm": _commentary(sides, events, quarters, extra_time, wet),
+        "comm": comm, "feed": feed, "timeline": timeline,
         "tactics": [dict(sides[0].tac), dict(sides[1].tac)],
     }
 
@@ -482,10 +487,11 @@ def score_str(g: int, b: int) -> str:
     return f"{g}.{b} ({g * 6 + b})"
 
 
-def _commentary(sides, events, quarters, extra_time, wet) -> list[str]:
-    """Turn the event log into a short highlights reel."""
+def _commentary(sides, events, quarters, extra_time, wet) -> tuple[list[str], list]:
+    """Turn the event log into a short highlights reel.  Returns the text reel
+    (for reports) and the same moments as [quarter, minute, text] (for live views)."""
     names = [s.name for s in sides]
-    out = []
+    out, feed = [], []
     if wet:
         out.append("Conditions: wet and slippery - a day for the in-and-under types.")
     goals_by, streak_side, streak, shown_streak = {}, None, 0, False
@@ -498,6 +504,10 @@ def _commentary(sides, events, quarters, extra_time, wet) -> list[str]:
         hg, hb, ag, ab = quarters[q - 1]
         return f"{qlabel[q]}: {names[0]} {score_str(hg, hb)} - {names[1]} {score_str(ag, ab)}"
 
+    def say(q, minute, tag, text):
+        out.append(f"{tag}  {text}")
+        feed.append([q, minute, text])
+
     for q, minute, kind, i, pl, extra, lead_before in events:
         while cur_q < q and cur_q <= 3:
             out.append(qline(cur_q))
@@ -506,7 +516,7 @@ def _commentary(sides, events, quarters, extra_time, wet) -> list[str]:
         if kind == "screamer":
             if screamers < 2:
                 screamers += 1
-                out.append(f"{tag}  SCREAMER! {pl.p.name} climbs over {extra.p.name} and pulls it down.")
+                say(q, minute, tag, f"SCREAMER! {pl.p.name} climbs over {extra.p.name} and pulls it down.")
             continue
         n = goals_by[pl.p.id] = goals_by.get(pl.p.id, 0) + 1
         if streak_side == i:
@@ -516,18 +526,18 @@ def _commentary(sides, events, quarters, extra_time, wet) -> list[str]:
         how = {"set": "goes back and slots the set shot", "snap": "snaps truly from the pocket",
                "long": "launches from outside 50 - it's home"}[extra]
         if first:
-            out.append(f"{tag}  {pl.p.name} {how} for the first of the day ({names[i]}).")
+            say(q, minute, tag, f"{pl.p.name} {how} for the first of the day ({names[i]}).")
             first = False
         elif n in (4, 6, 8) or n == 5:
             word = {4: "fourth", 5: "FIFTH", 6: "sixth", 8: "eighth"}[n]
-            out.append(f"{tag}  {pl.p.name} has his {word}! He's having a day out for {names[i]}.")
+            say(q, minute, tag, f"{pl.p.name} has his {word}! He's having a day out for {names[i]}.")
         elif streak >= 4 and not shown_streak:
             shown_streak = True
-            out.append(f"{tag}  {names[i]} have kicked {streak} on the trot - {pl.p.name} with the latest.")
+            say(q, minute, tag, f"{names[i]} have kicked {streak} on the trot - {pl.p.name} with the latest.")
         elif q >= 4 and lead_before <= 0 and lead_before + 6 > 0:
-            out.append(f"{tag}  {pl.p.name} {how} and {names[i]} hit the front!")
+            say(q, minute, tag, f"{pl.p.name} {how} and {names[i]} hit the front!")
         elif q >= 4 and minute >= 24 and 0 < lead_before <= 11:
-            out.append(f"{tag}  {pl.p.name} {how} - that might be the sealer for {names[i]}.")
+            say(q, minute, tag, f"{pl.p.name} {how} - that might be the sealer for {names[i]}.")
     while cur_q <= 3:
         out.append(qline(cur_q))
         cur_q += 1
@@ -541,4 +551,4 @@ def _commentary(sides, events, quarters, extra_time, wet) -> list[str]:
         other = [l for l in out if l not in keep]
         chosen = set(other[:3] + other[-(13 - len(keep)):]) if len(keep) < 13 else set(other[:3])
         out = [l for l in out if l in keep or l in chosen]
-    return out
+    return out, feed
