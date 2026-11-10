@@ -284,7 +284,7 @@ function token(slot, s, own, selected) {
 
 export function ovalView(slots, own, sel) {
   const A = E.statics;
-  return `<div class="oval"><div class="turf"><span class="arc top"></span><span class="arc bot"></span></div>${Object.keys(A.field_slots).map(s => token(s, slots[s], own, sel === s)).join("")}</div>
+  return `<div class="oval"><div class="turf"><span class="arc north"></span><span class="arc south"></span></div>${Object.keys(A.field_slots).map(s => token(s, slots[s], own, sel === s)).join("")}</div>
     <div class="bench">${A.bench_slots.map(s => token(s, slots[s], own, sel === s)).join("")}</div>`;
 }
 

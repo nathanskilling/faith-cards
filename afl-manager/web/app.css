@@ -244,7 +244,7 @@ table.tbl { width: 100%; border-collapse: collapse; }
 .turf::before { content: ""; position: absolute; left: 36%; right: 36%; top: 40%; bottom: 40%; border: 2px solid var(--turf-line); border-radius: 3px; }
 .turf::after { content: ""; position: absolute; left: 45%; width: 10%; top: 50%; aspect-ratio: 1; transform: translateY(-50%); border: 2px solid var(--turf-line); border-radius: 50%; }
 .arc { position: absolute; left: 24%; right: 24%; height: 30%; border: 2px solid var(--turf-line); border-radius: 50%; }
-.arc.top { top: -15%; } .arc.bot { bottom: -15%; }
+.arc.north { top: -15%; } .arc.south { bottom: -15%; }
 .tok { position: absolute; transform: translate(-50%, -50%); width: 25%; max-width: 150px; background: color-mix(in srgb, var(--surface) 92%, transparent); border: 1px solid var(--line2); border-radius: 8px; padding: 4px 6px 5px; cursor: pointer; text-align: left; line-height: 1.15; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
 .tok:hover { border-color: var(--text); }
 .tok.sel { border-color: var(--club); box-shadow: 0 0 0 2px var(--club); }
