@@ -1,0 +1,956 @@
+{
+ "picks": [
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2027,
+   "round": 1,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2027,
+   "round": 2,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2027,
+   "round": 3,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2027,
+   "round": 4,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "ADE",
+   "owner": "ADE"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "BRI",
+   "owner": "BRI"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "CAR",
+   "owner": "CAR"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "COL",
+   "owner": "COL"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "ESS",
+   "owner": "ESS"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "FRE",
+   "owner": "FRE"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "GEE",
+   "owner": "GEE"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "GCS",
+   "owner": "GCS"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "GWS",
+   "owner": "GWS"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "HAW",
+   "owner": "HAW"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "MEL",
+   "owner": "MEL"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "NTH",
+   "owner": "NTH"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "PTA",
+   "owner": "PTA"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "RIC",
+   "owner": "RIC"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "STK",
+   "owner": "STK"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "SYD",
+   "owner": "SYD"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "WCE",
+   "owner": "WCE"
+  },
+  {
+   "year": 2028,
+   "round": 1,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2028,
+   "round": 2,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2028,
+   "round": 3,
+   "orig": "WBD",
+   "owner": "WBD"
+  },
+  {
+   "year": 2028,
+   "round": 4,
+   "orig": "WBD",
+   "owner": "WBD"
+  }
+ ],
+ "pool": [
+  757,
+  758,
+  759,
+  760,
+  761,
+  762,
+  763,
+  764,
+  765,
+  766,
+  767,
+  768,
+  769,
+  770,
+  771,
+  772,
+  773,
+  774,
+  775,
+  776,
+  777,
+  778,
+  779,
+  780,
+  781,
+  782,
+  783,
+  784,
+  785,
+  786,
+  787,
+  788,
+  789,
+  790,
+  791,
+  792,
+  793,
+  794,
+  795,
+  796,
+  797,
+  798,
+  799,
+  800,
+  801,
+  802,
+  803,
+  804,
+  805,
+  806,
+  807,
+  808,
+  809,
+  810,
+  811,
+  812,
+  813,
+  814,
+  815,
+  816,
+  817,
+  818,
+  819,
+  820,
+  821,
+  822,
+  823,
+  824,
+  825,
+  826,
+  827,
+  828,
+  829,
+  830,
+  831,
+  832,
+  833,
+  834,
+  835,
+  836,
+  837,
+  838,
+  839,
+  840
+ ],
+ "pool_year": 2027,
+ "live": null
+}

@@ -1,0 +1,16 @@
+{
+ "version": 1,
+ "save_name": "career",
+ "seed": 2027,
+ "year": 2027,
+ "phase": "season",
+ "round": 1,
+ "user_club": null,
+ "manager": "",
+ "hired": 2027,
+ "selection": "auto",
+ "cap": 18500,
+ "wage_scale": 1.275,
+ "next_pid": 840,
+ "next_mid": 207
+}

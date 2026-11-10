@@ -1,0 +1,1712 @@
+{
+ "year": 2027,
+ "rounds": [
+  [
+   {
+    "id": 1,
+    "rnd": 1,
+    "home": "COL",
+    "away": "SYD",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 2,
+    "rnd": 1,
+    "home": "MEL",
+    "away": "STK",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 3,
+    "rnd": 1,
+    "home": "RIC",
+    "away": "PTA",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 4,
+    "rnd": 1,
+    "home": "HAW",
+    "away": "FRE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 5,
+    "rnd": 1,
+    "home": "BRI",
+    "away": "GEE",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 6,
+    "rnd": 1,
+    "home": "ADE",
+    "away": "CAR",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 7,
+    "rnd": 1,
+    "home": "GCS",
+    "away": "NTH",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 8,
+    "rnd": 1,
+    "home": "GWS",
+    "away": "WCE",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 9,
+    "rnd": 1,
+    "home": "ESS",
+    "away": "WBD",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 10,
+    "rnd": 2,
+    "home": "COL",
+    "away": "NTH",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 11,
+    "rnd": 2,
+    "home": "ADE",
+    "away": "GWS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 12,
+    "rnd": 2,
+    "home": "WBD",
+    "away": "GEE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 13,
+    "rnd": 2,
+    "home": "HAW",
+    "away": "ESS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 14,
+    "rnd": 2,
+    "home": "WCE",
+    "away": "PTA",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 15,
+    "rnd": 2,
+    "home": "MEL",
+    "away": "GCS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 16,
+    "rnd": 2,
+    "home": "CAR",
+    "away": "SYD",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 17,
+    "rnd": 2,
+    "home": "STK",
+    "away": "BRI",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 18,
+    "rnd": 2,
+    "home": "FRE",
+    "away": "RIC",
+    "venue": "Optus Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 19,
+    "rnd": 3,
+    "home": "COL",
+    "away": "STK",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 20,
+    "rnd": 3,
+    "home": "SYD",
+    "away": "RIC",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 21,
+    "rnd": 3,
+    "home": "FRE",
+    "away": "MEL",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 22,
+    "rnd": 3,
+    "home": "BRI",
+    "away": "PTA",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 23,
+    "rnd": 3,
+    "home": "HAW",
+    "away": "CAR",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 24,
+    "rnd": 3,
+    "home": "GCS",
+    "away": "GEE",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 25,
+    "rnd": 3,
+    "home": "ADE",
+    "away": "WCE",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 26,
+    "rnd": 3,
+    "home": "ESS",
+    "away": "NTH",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 27,
+    "rnd": 3,
+    "home": "GWS",
+    "away": "WBD",
+    "venue": "ENGIE Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 28,
+    "rnd": 4,
+    "home": "COL",
+    "away": "ADE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 29,
+    "rnd": 4,
+    "home": "NTH",
+    "away": "GEE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 30,
+    "rnd": 4,
+    "home": "GWS",
+    "away": "HAW",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 31,
+    "rnd": 4,
+    "home": "PTA",
+    "away": "WBD",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 32,
+    "rnd": 4,
+    "home": "ESS",
+    "away": "MEL",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 33,
+    "rnd": 4,
+    "home": "SYD",
+    "away": "WCE",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 34,
+    "rnd": 4,
+    "home": "GCS",
+    "away": "STK",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 35,
+    "rnd": 4,
+    "home": "RIC",
+    "away": "CAR",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 36,
+    "rnd": 4,
+    "home": "BRI",
+    "away": "FRE",
+    "venue": "Gabba",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 37,
+    "rnd": 5,
+    "home": "ESS",
+    "away": "COL",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 38,
+    "rnd": 5,
+    "home": "WBD",
+    "away": "WCE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 39,
+    "rnd": 5,
+    "home": "GCS",
+    "away": "GWS",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 40,
+    "rnd": 5,
+    "home": "NTH",
+    "away": "CAR",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 41,
+    "rnd": 5,
+    "home": "BRI",
+    "away": "ADE",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 42,
+    "rnd": 5,
+    "home": "GEE",
+    "away": "FRE",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 43,
+    "rnd": 5,
+    "home": "RIC",
+    "away": "HAW",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 44,
+    "rnd": 5,
+    "home": "PTA",
+    "away": "STK",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 45,
+    "rnd": 5,
+    "home": "SYD",
+    "away": "MEL",
+    "venue": "SCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 46,
+    "rnd": 6,
+    "home": "COL",
+    "away": "WBD",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 47,
+    "rnd": 6,
+    "home": "GWS",
+    "away": "ESS",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 48,
+    "rnd": 6,
+    "home": "WCE",
+    "away": "NTH",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 49,
+    "rnd": 6,
+    "home": "ADE",
+    "away": "GCS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 50,
+    "rnd": 6,
+    "home": "GEE",
+    "away": "CAR",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 51,
+    "rnd": 6,
+    "home": "BRI",
+    "away": "HAW",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 52,
+    "rnd": 6,
+    "home": "PTA",
+    "away": "FRE",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 53,
+    "rnd": 6,
+    "home": "MEL",
+    "away": "RIC",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 54,
+    "rnd": 6,
+    "home": "STK",
+    "away": "SYD",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 55,
+    "rnd": 7,
+    "home": "GCS",
+    "away": "COL",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 56,
+    "rnd": 7,
+    "home": "CAR",
+    "away": "WCE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 57,
+    "rnd": 7,
+    "home": "ESS",
+    "away": "BRI",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 58,
+    "rnd": 7,
+    "home": "FRE",
+    "away": "WBD",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 59,
+    "rnd": 7,
+    "home": "GWS",
+    "away": "RIC",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 60,
+    "rnd": 7,
+    "home": "STK",
+    "away": "NTH",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 61,
+    "rnd": 7,
+    "home": "ADE",
+    "away": "SYD",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 62,
+    "rnd": 7,
+    "home": "MEL",
+    "away": "GEE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 63,
+    "rnd": 7,
+    "home": "HAW",
+    "away": "PTA",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 64,
+    "rnd": 8,
+    "home": "COL",
+    "away": "PTA",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 65,
+    "rnd": 8,
+    "home": "MEL",
+    "away": "HAW",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 66,
+    "rnd": 8,
+    "home": "GEE",
+    "away": "SYD",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 67,
+    "rnd": 8,
+    "home": "STK",
+    "away": "ADE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 68,
+    "rnd": 8,
+    "home": "NTH",
+    "away": "RIC",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 69,
+    "rnd": 8,
+    "home": "FRE",
+    "away": "GWS",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 70,
+    "rnd": 8,
+    "home": "WBD",
+    "away": "BRI",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 71,
+    "rnd": 8,
+    "home": "CAR",
+    "away": "ESS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 72,
+    "rnd": 8,
+    "home": "WCE",
+    "away": "GCS",
+    "venue": "Optus Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 73,
+    "rnd": 9,
+    "home": "HAW",
+    "away": "COL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 74,
+    "rnd": 9,
+    "home": "GEE",
+    "away": "PTA",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 75,
+    "rnd": 9,
+    "home": "MEL",
+    "away": "ADE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 76,
+    "rnd": 9,
+    "home": "NTH",
+    "away": "SYD",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 77,
+    "rnd": 9,
+    "home": "STK",
+    "away": "GWS",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 78,
+    "rnd": 9,
+    "home": "WBD",
+    "away": "RIC",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 79,
+    "rnd": 9,
+    "home": "FRE",
+    "away": "ESS",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 80,
+    "rnd": 9,
+    "home": "WCE",
+    "away": "BRI",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 81,
+    "rnd": 9,
+    "home": "CAR",
+    "away": "GCS",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 82,
+    "rnd": 10,
+    "home": "GWS",
+    "away": "COL",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 83,
+    "rnd": 10,
+    "home": "WBD",
+    "away": "NTH",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 84,
+    "rnd": 10,
+    "home": "ADE",
+    "away": "ESS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 85,
+    "rnd": 10,
+    "home": "WCE",
+    "away": "GEE",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 86,
+    "rnd": 10,
+    "home": "HAW",
+    "away": "GCS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 87,
+    "rnd": 10,
+    "home": "CAR",
+    "away": "PTA",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 88,
+    "rnd": 10,
+    "home": "MEL",
+    "away": "BRI",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 89,
+    "rnd": 10,
+    "home": "FRE",
+    "away": "SYD",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 90,
+    "rnd": 10,
+    "home": "STK",
+    "away": "RIC",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 91,
+    "rnd": 11,
+    "home": "COL",
+    "away": "BRI",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 92,
+    "rnd": 11,
+    "home": "CAR",
+    "away": "FRE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 93,
+    "rnd": 11,
+    "home": "RIC",
+    "away": "GCS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 94,
+    "rnd": 11,
+    "home": "WCE",
+    "away": "STK",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 95,
+    "rnd": 11,
+    "home": "SYD",
+    "away": "ESS",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 96,
+    "rnd": 11,
+    "home": "WBD",
+    "away": "MEL",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 97,
+    "rnd": 11,
+    "home": "PTA",
+    "away": "GWS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 98,
+    "rnd": 11,
+    "home": "NTH",
+    "away": "HAW",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 99,
+    "rnd": 11,
+    "home": "GEE",
+    "away": "ADE",
+    "venue": "GMHBA Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 100,
+    "rnd": 12,
+    "home": "COL",
+    "away": "RIC",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 101,
+    "rnd": 12,
+    "home": "FRE",
+    "away": "STK",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 102,
+    "rnd": 12,
+    "home": "SYD",
+    "away": "BRI",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 103,
+    "rnd": 12,
+    "home": "CAR",
+    "away": "MEL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 104,
+    "rnd": 12,
+    "home": "PTA",
+    "away": "GCS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 105,
+    "rnd": 12,
+    "home": "WCE",
+    "away": "HAW",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 106,
+    "rnd": 12,
+    "home": "GEE",
+    "away": "ESS",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 107,
+    "rnd": 12,
+    "home": "WBD",
+    "away": "ADE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 108,
+    "rnd": 12,
+    "home": "NTH",
+    "away": "GWS",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 109,
+    "rnd": 13,
+    "home": "COL",
+    "away": "CAR",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 110,
+    "rnd": 13,
+    "home": "GCS",
+    "away": "BRI",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 111,
+    "rnd": 13,
+    "home": "FRE",
+    "away": "WCE",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 112,
+    "rnd": 13,
+    "home": "ESS",
+    "away": "RIC",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 113,
+    "rnd": 13,
+    "home": "STK",
+    "away": "WBD",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 114,
+    "rnd": 13,
+    "home": "GWS",
+    "away": "SYD",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 115,
+    "rnd": 13,
+    "home": "MEL",
+    "away": "NTH",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 116,
+    "rnd": 13,
+    "home": "ADE",
+    "away": "PTA",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 117,
+    "rnd": 13,
+    "home": "HAW",
+    "away": "GEE",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 118,
+    "rnd": 14,
+    "home": "COL",
+    "away": "WCE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 119,
+    "rnd": 14,
+    "home": "ESS",
+    "away": "GCS",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 120,
+    "rnd": 14,
+    "home": "CAR",
+    "away": "WBD",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 121,
+    "rnd": 14,
+    "home": "GWS",
+    "away": "BRI",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 122,
+    "rnd": 14,
+    "home": "FRE",
+    "away": "NTH",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 123,
+    "rnd": 14,
+    "home": "ADE",
+    "away": "RIC",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 124,
+    "rnd": 14,
+    "home": "STK",
+    "away": "GEE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 125,
+    "rnd": 14,
+    "home": "HAW",
+    "away": "SYD",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 126,
+    "rnd": 14,
+    "home": "MEL",
+    "away": "PTA",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 127,
+    "rnd": 15,
+    "home": "FRE",
+    "away": "COL",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 128,
+    "rnd": 15,
+    "home": "RIC",
+    "away": "BRI",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 129,
+    "rnd": 15,
+    "home": "CAR",
+    "away": "STK",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 130,
+    "rnd": 15,
+    "home": "SYD",
+    "away": "GCS",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 131,
+    "rnd": 15,
+    "home": "WCE",
+    "away": "MEL",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 132,
+    "rnd": 15,
+    "home": "PTA",
+    "away": "ESS",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 133,
+    "rnd": 15,
+    "home": "WBD",
+    "away": "HAW",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 134,
+    "rnd": 15,
+    "home": "GEE",
+    "away": "GWS",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 135,
+    "rnd": 15,
+    "home": "NTH",
+    "away": "ADE",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 136,
+    "rnd": 16,
+    "home": "MEL",
+    "away": "COL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 137,
+    "rnd": 16,
+    "home": "PTA",
+    "away": "SYD",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 138,
+    "rnd": 16,
+    "home": "STK",
+    "away": "HAW",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 139,
+    "rnd": 16,
+    "home": "GEE",
+    "away": "RIC",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 140,
+    "rnd": 16,
+    "home": "FRE",
+    "away": "ADE",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 141,
+    "rnd": 16,
+    "home": "NTH",
+    "away": "BRI",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 142,
+    "rnd": 16,
+    "home": "CAR",
+    "away": "GWS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 143,
+    "rnd": 16,
+    "home": "WBD",
+    "away": "GCS",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 144,
+    "rnd": 16,
+    "home": "WCE",
+    "away": "ESS",
+    "venue": "Optus Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 145,
+    "rnd": 17,
+    "home": "COL",
+    "away": "GEE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 146,
+    "rnd": 17,
+    "home": "HAW",
+    "away": "ADE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 147,
+    "rnd": 17,
+    "home": "NTH",
+    "away": "PTA",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 148,
+    "rnd": 17,
+    "home": "MEL",
+    "away": "GWS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 149,
+    "rnd": 17,
+    "home": "WBD",
+    "away": "SYD",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 150,
+    "rnd": 17,
+    "home": "STK",
+    "away": "ESS",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 151,
+    "rnd": 17,
+    "home": "WCE",
+    "away": "RIC",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 152,
+    "rnd": 17,
+    "home": "FRE",
+    "away": "GCS",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 153,
+    "rnd": 17,
+    "home": "CAR",
+    "away": "BRI",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 154,
+    "rnd": 18,
+    "home": "WCE",
+    "away": "COL",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 155,
+    "rnd": 18,
+    "home": "GCS",
+    "away": "ESS",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 156,
+    "rnd": 18,
+    "home": "WBD",
+    "away": "CAR",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 157,
+    "rnd": 18,
+    "home": "BRI",
+    "away": "GWS",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 158,
+    "rnd": 18,
+    "home": "NTH",
+    "away": "FRE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 159,
+    "rnd": 18,
+    "home": "RIC",
+    "away": "ADE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 160,
+    "rnd": 18,
+    "home": "GEE",
+    "away": "STK",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 161,
+    "rnd": 18,
+    "home": "SYD",
+    "away": "HAW",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 162,
+    "rnd": 18,
+    "home": "PTA",
+    "away": "MEL",
+    "venue": "Adelaide Oval",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 163,
+    "rnd": 19,
+    "home": "RIC",
+    "away": "COL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 164,
+    "rnd": 19,
+    "home": "STK",
+    "away": "FRE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 165,
+    "rnd": 19,
+    "home": "BRI",
+    "away": "SYD",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 166,
+    "rnd": 19,
+    "home": "MEL",
+    "away": "CAR",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 167,
+    "rnd": 19,
+    "home": "GCS",
+    "away": "PTA",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 168,
+    "rnd": 19,
+    "home": "HAW",
+    "away": "WCE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 169,
+    "rnd": 19,
+    "home": "ESS",
+    "away": "GEE",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 170,
+    "rnd": 19,
+    "home": "ADE",
+    "away": "WBD",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 171,
+    "rnd": 19,
+    "home": "GWS",
+    "away": "NTH",
+    "venue": "ENGIE Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 172,
+    "rnd": 20,
+    "home": "COL",
+    "away": "MEL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 173,
+    "rnd": 20,
+    "home": "SYD",
+    "away": "PTA",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 174,
+    "rnd": 20,
+    "home": "HAW",
+    "away": "STK",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 175,
+    "rnd": 20,
+    "home": "RIC",
+    "away": "GEE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 176,
+    "rnd": 20,
+    "home": "ADE",
+    "away": "FRE",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 177,
+    "rnd": 20,
+    "home": "BRI",
+    "away": "NTH",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 178,
+    "rnd": 20,
+    "home": "GWS",
+    "away": "CAR",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 179,
+    "rnd": 20,
+    "home": "GCS",
+    "away": "WBD",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 180,
+    "rnd": 20,
+    "home": "ESS",
+    "away": "WCE",
+    "venue": "Marvel Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 181,
+    "rnd": 21,
+    "home": "CAR",
+    "away": "COL",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 182,
+    "rnd": 21,
+    "home": "BRI",
+    "away": "GCS",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 183,
+    "rnd": 21,
+    "home": "WCE",
+    "away": "FRE",
+    "venue": "Optus Stadium",
+    "played": false
+   },
+   {
+    "id": 184,
+    "rnd": 21,
+    "home": "RIC",
+    "away": "ESS",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 185,
+    "rnd": 21,
+    "home": "WBD",
+    "away": "STK",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 186,
+    "rnd": 21,
+    "home": "SYD",
+    "away": "GWS",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 187,
+    "rnd": 21,
+    "home": "NTH",
+    "away": "MEL",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 188,
+    "rnd": 21,
+    "home": "PTA",
+    "away": "ADE",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 189,
+    "rnd": 21,
+    "home": "GEE",
+    "away": "HAW",
+    "venue": "GMHBA Stadium",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 190,
+    "rnd": 22,
+    "home": "NTH",
+    "away": "COL",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 191,
+    "rnd": 22,
+    "home": "GWS",
+    "away": "ADE",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 192,
+    "rnd": 22,
+    "home": "GEE",
+    "away": "WBD",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 193,
+    "rnd": 22,
+    "home": "ESS",
+    "away": "HAW",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 194,
+    "rnd": 22,
+    "home": "PTA",
+    "away": "WCE",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 195,
+    "rnd": 22,
+    "home": "GCS",
+    "away": "MEL",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 196,
+    "rnd": 22,
+    "home": "SYD",
+    "away": "CAR",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 197,
+    "rnd": 22,
+    "home": "BRI",
+    "away": "STK",
+    "venue": "Gabba",
+    "played": false
+   },
+   {
+    "id": 198,
+    "rnd": 22,
+    "home": "RIC",
+    "away": "FRE",
+    "venue": "MCG",
+    "played": false
+   }
+  ],
+  [
+   {
+    "id": 199,
+    "rnd": 23,
+    "home": "GEE",
+    "away": "COL",
+    "venue": "GMHBA Stadium",
+    "played": false
+   },
+   {
+    "id": 200,
+    "rnd": 23,
+    "home": "ADE",
+    "away": "HAW",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 201,
+    "rnd": 23,
+    "home": "PTA",
+    "away": "NTH",
+    "venue": "Adelaide Oval",
+    "played": false
+   },
+   {
+    "id": 202,
+    "rnd": 23,
+    "home": "GWS",
+    "away": "MEL",
+    "venue": "ENGIE Stadium",
+    "played": false
+   },
+   {
+    "id": 203,
+    "rnd": 23,
+    "home": "SYD",
+    "away": "WBD",
+    "venue": "SCG",
+    "played": false
+   },
+   {
+    "id": 204,
+    "rnd": 23,
+    "home": "ESS",
+    "away": "STK",
+    "venue": "Marvel Stadium",
+    "played": false
+   },
+   {
+    "id": 205,
+    "rnd": 23,
+    "home": "RIC",
+    "away": "WCE",
+    "venue": "MCG",
+    "played": false
+   },
+   {
+    "id": 206,
+    "rnd": 23,
+    "home": "GCS",
+    "away": "FRE",
+    "venue": "People First Stadium",
+    "played": false
+   },
+   {
+    "id": 207,
+    "rnd": 23,
+    "home": "BRI",
+    "away": "CAR",
+    "venue": "Gabba",
+    "played": false
+   }
+  ]
+ ],
+ "finals": [],
+ "seeds": [],
+ "awards": {},
+ "premier": null,
+ "runner_up": null
+}
