@@ -1,0 +1,11 @@
+{
+  "name": "AFL Manager",
+  "short_name": "AFL Manager",
+  "description": "Coach an AFL club: pick the side, set the game plan, run the list and chase a flag.",
+  "start_url": "../index.html",
+  "scope": "../",
+  "display": "standalone",
+  "background_color": "#0c1311",
+  "theme_color": "#0c1311",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

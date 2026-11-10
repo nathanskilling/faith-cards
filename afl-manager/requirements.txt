@@ -1,0 +1,3 @@
+# The game engine and text interface use only the Python standard library.
+# Streamlit (and pandas, which it brings) is needed only for the web interface.
+streamlit>=1.40

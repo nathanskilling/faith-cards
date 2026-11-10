@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.tmp
+.pytest_cache/
+# scratch saves; the main career in saves/career is committed so it survives sessions
+saves/test*/
+saves/demo*/
